@@ -19,8 +19,9 @@ Data Preprocessing
 ![First Model Accuracy]()
 
 **Steps taken to try to improve the accuracy of the model:**
-1. Everything was the same as the first run, but the first layer was changed to 60 neurons, the second was changed to 25 neurons, and the epochs were increased to 100. This resulted in practically the same accuracty of 72%.
+1. Everything was the same as the first run, but the first layer was changed to 60 neurons, the second was changed to 25 neurons, and the epochs were increased to 100. This resulted in practically the same accuracy of 72%.
 2. An optimizer was then run to see what might create the best model on the current data. The best it returned was almost 73%.
-3. 
+3. After reassessing, the two columns that were originally dropped, EIN and Name, were kept. The Name column was looked at and all the single applications were put into one bin. The Application_Type and Class columns were binned as they were in the first model as well. This model was then run through an optimizer and the best it returned was 80%.
+4. Using the optimization results found, a new model was initiated with: __input features, 73 neurons in the first layer, 49 neurons in the second layer, the epochs were increased to 200, and tanh as the activation. Again only two hidden layers were used. An accuracy of 78% was returned, improving on the original model by 6%.
 
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
