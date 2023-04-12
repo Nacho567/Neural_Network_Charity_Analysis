@@ -1,17 +1,26 @@
 # Neural Network Charity Analysis
 
-## ***Overview*** Explain the purpose of this analysis.
+## **Overview**
 
-## ***Results***  Using bulleted lists and images to support your answers, address the following questions.
+In this analysis we tested data to create a neural network to see if applicants applying for Alphabet Soup funding will be successful. 
+
+## **Results**
 
 Data Preprocessing
-- What variable(s) are considered the target(s) for your model?
-- What variable(s) are considered to be the features for your model?
-- What variable(s) are neither targets nor features, and should be removed from the input data?
+- The target for this model was the 'IS_SUCCESSFUL' column, which helped train our model to see if a company used their funding successfully.
+- The variables we used first for features are all of the columns pictured below, except: EIN, Name, and Is_successful.
+- The EIN and Name variables were removed beacause it was decided that they provided no extra help to the learning model.
 
-Compiling, Training, and Evaluating the Model
-- How many neurons, layers, and activation functions did you select for your neural network model, and why?
-- Were you able to achieve the target model performance?
-- What steps did you take to try and increase model performance?
+![application dataframe head]()
+
+**Compiling, Training, and Evaluating the Model**
+- The first model was given to us, and included: 44 input features, 80 neurons in the first layer, 30 neurons in the second layer, and 'relu' as the activation. Only two hidden layers were used.
+- Target model performance was not met as the model could only achieve about 72%.
+![First Model Accuracy]()
+
+**Steps taken to try to improve the accuracy of the model:**
+1. Everything was the same as the first run, but the first layer was changed to 60 neurons, the second was changed to 25 neurons, and the epochs were increased to 100. This resulted in practically the same accuracty of 72%.
+2. An optimizer was then run to see what might create the best model on the current data. The best it returned was almost 73%.
+3. 
 
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
