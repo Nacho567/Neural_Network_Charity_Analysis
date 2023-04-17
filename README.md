@@ -31,4 +31,6 @@ Data Preprocessing
 
 ![Best Model Accuracy](https://github.com/Nacho567/Neural_Network_Charity_Analysis/blob/896db22e3cddda27f54f2e859b83caa8fe83dc4c/challenge_code/Resources/best_model_acc.PNG)
 
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+## **Summary**
+
+Through the changes that were made, we were able to achieve a better accuracy. Keeping the Name column was a big change, as was increasing the epochs. Our recomendation is still to keep trying to increase the accuracy through trials, with a focus on keeping or adding columns as that appeared to have the largest effect on accuracy.
