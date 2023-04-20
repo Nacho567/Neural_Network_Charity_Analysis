@@ -25,12 +25,13 @@ Data Preprocessing
 ![](https://github.com/Nacho567/Neural_Network_Charity_Analysis/blob/896db22e3cddda27f54f2e859b83caa8fe83dc4c/challenge_code/Resources/third_model_acc.PNG)
 
 3. After reassessing, the two columns that were originally dropped, EIN and Name, were kept. The Name column was looked at and all the single applications were put into one bin. The Application_Type and Class columns were binned as they were in the first model as well. This model was then run through an optimizer and the best it returned was 80%.
+
 ![Second Optimizer](https://github.com/Nacho567/Neural_Network_Charity_Analysis/blob/896db22e3cddda27f54f2e859b83caa8fe83dc4c/challenge_code/Resources/second_optimizer.PNG)
 
-4. Using the optimization results found, a new model was initiated with: __input features, 73 neurons in the first layer, 49 neurons in the second layer, the epochs were increased to 200, and tanh as the activation. Again only two hidden layers were used. An accuracy of 78% was returned, improving on the original model by 6%.
+4. Using the optimization results found, a new model was initiated with: 838 input features, 73 neurons in the first layer, 49 neurons in the second layer, the epochs were increased to 200, and tanh as the activation. Again only two hidden layers were used. An accuracy of 78% was returned, improving on the original model by 6%, but it still has a loss of 50%.
 
 ![Best Model Accuracy](https://github.com/Nacho567/Neural_Network_Charity_Analysis/blob/896db22e3cddda27f54f2e859b83caa8fe83dc4c/challenge_code/Resources/best_model_acc.PNG)
 
 ## **Summary**
 
-Through the changes that were made, we were able to achieve a better accuracy. Keeping the Name column was a big change, as was increasing the epochs. Our recomendation is still to keep trying to increase the accuracy through trials, with a focus on keeping or adding columns as that appeared to have the largest effect on accuracy.
+Through the changes that were made, we were able to achieve a better accuracy. Keeping the Name column was a big change, as was increasing the epochs. Our recomendation is still to keep trying to increase the accuracy through trials, with a focus on keeping or adding columns as that appeared to have the largest effect on accuracy. Another aspect to consider is binning more of the inputs, as 838 is a large amount and running the model took much longer than other models.
